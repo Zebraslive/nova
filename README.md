@@ -95,6 +95,34 @@ You can freely host this website yourself. All we ask is that you provide proper
 </a>
 </div>
 
+## 🛠️ Setting Up the PHP Project and SQL Database
+
+To set up the PHP project and SQL database, follow these steps:
+
+1. **Install a local server environment**: You can use XAMPP, WAMP, MAMP, or any other local server environment that supports PHP and MySQL.
+
+2. **Clone the repository**: Clone this repository to your local server's root directory (e.g., `htdocs` for XAMPP).
+
+3. **Create the database**: Open your preferred database management tool (e.g., phpMyAdmin) and create a new database.
+
+4. **Import the database schema**: Import the provided SQL file (`database.sql`) into your newly created database. This file contains the necessary tables and schema for the project.
+
+5. **Configure the database connection**: Open the `database.php` file and update the database connection details (host, username, password, and database name) to match your local server configuration.
+
+6. **Start the local server**: Start your local server environment and navigate to the project's root directory in your web browser (e.g., `http://localhost/nova`).
+
+7. **Access the admin panel**: Navigate to `http://localhost/nova/admin.php` to access the admin panel. Use the admin panel to manage content and add movies to the database.
+
+## 🛠️ Admin Panel
+
+The admin panel allows you to manage content and add movies to the database. To use the admin panel, follow these steps:
+
+1. **Search for movies**: Use the search input to search for movies from the external TMDB API.
+
+2. **Add movies to the database**: Select a movie from the search results and click the "Add Movie" button. The JSON data from the TMDB API will be saved to the database.
+
+3. **Manage content**: Use the admin panel to view, edit, and delete movies from the database.
+
 <div align="center">
   
 ---
