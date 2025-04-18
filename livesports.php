@@ -129,14 +129,14 @@
                         <span class="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-violet-800">Nova</span>
                     </div>
                     <div class="hidden md:flex space-x-6">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.php" class="nav-link">Home</a>
                         <a href="https://github.com/ambr0sial/nova" target="_blank" class="nav-link">GitHub</a>
                         <a href="https://ko-fi.com/ambrosial" target="_blank" class="nav-link">Ko-Fi</a>
                         <a href="https://discord.gg/s9kUZw7CqP" target="_blank" class="nav-link">Discord</a>
                     </div>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <a href="settings.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300" title="Settings">
+                    <a href="settings.php" class="text-gray-400 hover:text-purple-400 transition-colors duration-300" title="Settings">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 settings-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -161,9 +161,9 @@
                 x-transition:leave-end="opacity-0 transform -translate-y-2"
                 class="md:hidden mt-4 pb-4">
                 <div class="flex flex-col space-y-4">
-                    <a href="index.html" class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors">Movies & Shows</a>
-                    <a href="livesports.html" class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors">Live Sports</a>
-                    <a href="settings.html" class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors flex items-center space-x-2">
+                    <a href="index.php" class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors">Movies & Shows</a>
+                    <a href="livesports.php" class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors">Live Sports</a>
+                    <a href="settings.php" class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors flex items-center space-x-2">
                         <span>Settings</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />

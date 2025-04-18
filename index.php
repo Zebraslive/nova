@@ -257,7 +257,7 @@
         <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg max-w-md w-full">
             <h2 class="text-lg font-bold mb-2">Important Notice</h2>
             <p class="mb-4">Please bookmark <a href="https://nova-domains.github.io" target="_blank" class="text-purple-400 underline">nova-domains.github.io</a> in case the domain you're using stops working. This website lists all Nova domains and indicates whether each one is working or not.</p>
-            <p class="mb-4">You can disable this popup in <a href="settings.html" class="text-purple-400 underline">Settings > Appearance</a>.</p>
+            <p class="mb-4">You can disable this popup in <a href="settings.php" class="text-purple-400 underline">Settings > Appearance</a>.</p>
             <button @click="showPopup = false" class="bg-purple-600 text-white w-full px-4 py-2 rounded hover:bg-purple-700 transition">Got it!</button>
         </div>
     </div>
@@ -285,7 +285,7 @@
                                 class="nav-link">
                             <span x-text="currentTab === 'movies' ? 'Switch to TV Shows' : 'Switch to Movies'"></span>
                         </button>
-                        <a href="livesports.html" class="nav-link">Live Sports</a>
+                        <a href="livesports.php" class="nav-link">Live Sports</a>
                         <button @click="showWatchLater = true" class="nav-link flex items-center space-x-2">
                             <span>Watch Later</span>
                             <span x-show="watchLaterCount > 0" 
@@ -318,7 +318,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="settings.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300" title="Settings">
+                    <a href="settings.php" class="text-gray-400 hover:text-purple-400 transition-colors duration-300" title="Settings">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 settings-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -347,7 +347,7 @@
                             class="text-left px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors">
                         <span x-text="currentTab === 'movies' ? 'Switch to TV Shows' : 'Switch to Movies'"></span>
                     </button>
-                    <a href="livesports.html" class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors">Live Sports</a>
+                    <a href="livesports.php" class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors">Live Sports</a>
                     <button @click="showWatchLater = true; mobileMenu = false" 
                             class="flex items-center justify-between px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors">
                         <span>Watch Later</span>
@@ -355,7 +355,7 @@
                               class="bg-purple-600 text-white text-xs flex items-center justify-center rounded-full w-6 h-6" 
                               x-text="watchLaterCount"></span>
                     </button>
-                    <a href="settings.html" class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors flex items-center space-x-2">
+                    <a href="settings.php" class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors flex items-center space-x-2">
                         <span>Settings</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -555,7 +555,7 @@
                             y: $event.clientY,
                             item: item
                         }">
-                        <a :href="'watch.html?id=' + item.id + '&type=' + (currentTab === 'movies' ? 'movie' : 'tv')"
+                        <a :href="'watch.php?id=' + item.id + '&type=' + (currentTab === 'movies' ? 'movie' : 'tv')"
                            class="block rounded-lg overflow-hidden bg-gray-800 aspect-[2/3]">
                             <div class="relative h-full">
                                 <img :src="'https://image.tmdb.org/t/p/w500' + item.poster_path" 
@@ -601,7 +601,7 @@
                         class="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg transition-all duration-300 flex items-center space-x-2">
                     <span>Next</span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                     </svg>
                 </button>
             </div>
@@ -784,7 +784,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     <template x-for="item in watchLaterItems" :key="item.id">
                         <div class="relative bg-gray-800 rounded-lg overflow-hidden">
-                            <a :href="'watch.html?id=' + item.id + '&type=' + item.type"
+                            <a :href="'watch.php?id=' + item.id + '&type=' + item.type"
                                class="block">
                                 <img :src="'https://image.tmdb.org/t/p/w500' + item.poster_path" 
                                      :alt="item.title || item.name"
@@ -873,7 +873,7 @@
         <button @click="copyToClipboard($store.contextMenu.item?.id)"
                 class="px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 flex items-center gap-2 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2V6a2 2 0 012-2h8a2 2 0 012 2v12l-7-3-7 3V5z" />
             </svg>
             Copy TMDB ID
         </button>
@@ -1165,7 +1165,7 @@
                     }
 
                     const baseUrl = 'https://api.themoviedb.org/3';
-                    const searchQuery = this.searchQuery.trim();
+                    const searchQuery = $this->searchQuery.trim();
                     
                     if (searchQuery.startsWith('@')) {
                         const personName = searchQuery.substring(1);
@@ -1324,7 +1324,7 @@
         pickRandom() {
             const randomItem = this.filteredContent[Math.floor(Math.random() * this.filteredContent.length)];
             if (randomItem) {
-                window.location.href = `watch.html?id=${randomItem.id}&type=${this.currentTab === 'movies' ? 'movie' : 'tv'}`;
+                window.location.href = `watch.php?id=${randomItem.id}&type=${this.currentTab === 'movies' ? 'movie' : 'tv'}`;
             }
         },
 

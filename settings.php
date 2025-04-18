@@ -147,7 +147,7 @@
                         <span class="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-violet-800">Nova</span>
                     </div>
                     <div class="hidden md:flex space-x-6">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.php" class="nav-link">Home</a>
                         <a href="https://github.com/ambr0sial/nova" target="_blank" class="nav-link">GitHub</a>
                         <a href="https://ko-fi.com/ambrosial" target="_blank" class="nav-link">Ko-Fi</a>
                         <a href="https://discord.gg/s9kUZw7CqP" target="_blank" class="nav-link">Discord</a>
@@ -171,8 +171,8 @@
                 x-transition:leave-end="opacity-0 transform -translate-y-2"
                 class="md:hidden mt-4 pb-4">
                 <div class="flex flex-col space-y-4">
-                    <a href="index.html" class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors">Home</a>
-                    <a href="livesports.html" class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors">Live Sports</a>
+                    <a href="index.php" class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors">Home</a>
+                    <a href="livesports.php" class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors">Live Sports</a>
                     <a href="https://github.com/ambr0sial/nova" target="_blank" 
                        class="px-4 py-2 hover:bg-gray-800 rounded-lg transition-colors">GitHub</a>
                     <a href="https://ko-fi.com/ambrosial" target="_blank" 
@@ -370,10 +370,3 @@
 </body>
 </html>
 
-<!--
- _   _                 
-| \ | | _____   ____ _ 
-|  \| |/ _ \ \ / / _` |
-| |\  | (_) \ V / (_| |
-|_| \_|\___/ \_/ \__,_|
--->
