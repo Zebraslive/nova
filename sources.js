@@ -4,8 +4,8 @@ const availableSources = [
         name: 'Vidify',
         isFrench: false,
         urls: {
-            movie: 'https://vidify.top/embed/movie/{id}',
-            tv: 'https://vidify.top/embed/tv/{id}/{season}/{episode}'
+            movie: 'https://player.vidify.top/embed/movie/{id}',
+            tv: 'https://player.vidify.top/embed/tv/{id}/{season}/{episode}'
         }
     },
     {
