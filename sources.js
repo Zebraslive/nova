@@ -1,47 +1,20 @@
 const availableSources = [
     {
+        id: 'vidify',
+        name: 'Vidify',
+        isFrench: false,
+        urls: {
+            movie: 'https://vidify.top/embed/movie/{id}',
+            tv: 'https://vidify.top/embed/tv/{id}/{season}/{episode}'
+        }
+    },
+    {
         id: 'multiembed',
         name: 'MultiEmbed',
         isFrench: false,
         urls: {
             movie: 'https://multiembed.mov/?video_id={id}&tmdb=1',
             tv: 'https://multiembed.mov/?video_id={id}&tmdb=1&s={season}&e={episode}'
-        }
-    },
-    {
-        id: 'frembed',
-        name: 'Frembed',
-        isFrench: true,
-        urls: {
-            movie: 'https://frembed.xyz/api/film.php?id={id}',
-            tv: 'https://frembed.xyz/api/serie.php?id={id}&sa={season}&epi={episode}'
-        }
-    },
-    {
-        id: 'moviesapi',
-        name: 'MoviesAPI',
-        isFrench: false,
-        urls: {
-            movie: 'https://moviesapi.club/movie/{id}',
-            tv: 'https://moviesapi.club/tv/{id}-{season}-{episode}'
-        }
-    },
-    {
-        id: 'embedsu',
-        name: 'EmbedSU',
-        isFrench: false,
-        urls: {
-            movie: 'https://embed.su/embed/movie/{id}',
-            tv: 'https://embed.su/embed/tv/{id}/{season}/{episode}'
-        }
-    },
-    {
-        id: 'hexa',
-        name: 'Hexa',
-        isFrench: false,
-        urls: {
-            movie: 'https://api.hexa.watch/movie/{id}',
-            tv: 'https://api.hexa.watch/tv/{id}/{season}/{episode}'
         }
     },
     {
@@ -196,15 +169,6 @@ const availableSources = [
         urls: {
             movie: 'https://api.cinepulse.fr/watch/sources?tmdbId={id}&type=movie',
             tv: 'https://api.cinepulse.fr/watch/sources?tmdbId={id}&type=tv&season={season}&episode={episode}'
-        }
-    },
-    {
-        id: 'vidify',
-        name: 'Vidify',
-        isFrench: false,
-        urls: {
-            movie: 'https://vidify.top/embed/movie/{id}',
-            tv: 'https://vidify.top/embed/tv/{id}/{season}/{episode}'
         }
     }
 ];
